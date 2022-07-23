@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Getting Started
 
 This project was created just to compare state without hooks and with hooks
 
