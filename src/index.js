@@ -6,10 +6,16 @@ import HomeController from './Home/HomeController';
 import HomeHooksController from './HomeHooks/HomeHooksController';
 import reportWebVitals from './reportWebVitals';
 
+import store from './store/store'
+
+import { Provider } from 'react-redux'
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <HomeHooksController />
+    <Provider store={store}>
+      <HomeHooksController />
+    </Provider>
   </React.StrictMode>
 );
 
